@@ -275,17 +275,23 @@ h1{
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 500px) {
+  
     body{
       background-color: yellow;
-    }
-    .header{
+      padding:20px;
+     
+    } 
+
+    
+    .header {
       display: flex;
+      justify-content: center;
     }
-    .top-nav a{
+    .top-nav {
       display: flex;
       align-content: center;
-    
-    .text-content{
-      display: flex;
     }
+   .content-destination{
+     width: 100%;
+   }
 }
