@@ -163,16 +163,41 @@ img {
   max-width: 100%;
   height: auto;
 }
-.title{
+.home .header {
   display: flex;
+  
+  margin-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed silver;
 }
-.navbar{
-  align-items: flex-end;
+h1{
+  display: inline-flex;
+
+}
+
+.header a{
+  display: inline-flex;
+  justify-content: right;
+  padding: 0;
+  color: black;
+  font-size: 8px;
+  text-decoration: none;
+  margin-left: 90px;
+}
+.top-section h2{
+  padding-top: 20px;
+}
+.top-section p{
+  padding-bottom: 25px;
+  border-bottom: 2px dashed silver;
 }
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.img-content{
+  display: flex;
 }
 .footer {
   width: 100%;
@@ -184,6 +209,24 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home button {
+  background-color: rgb(46, 134, 135);
+  border: none;
+  color: white;
+  height: 45px;
+  width: 200px;
+  border-radius: 18px;
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+}
+.home .text-content {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 48%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -230,4 +273,19 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 500px) {
+    body{
+      background-color: yellow;
+    }
+    .header{
+      display: flex;
+    }
+    .top-nav a{
+      display: flex;
+      align-content: center;
+    
+    .text-content{
+      display: flex;
+    }
 }
